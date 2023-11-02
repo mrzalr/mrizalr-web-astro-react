@@ -20,6 +20,9 @@ import Navbar from "../components/Navbar";
     <title>Beranda | mrizalr</title>
   </head>
   <body>
-    <Navbar client:load />
+    <header class="w-screen fixed top-0 left-0 right-0">
+      <Navbar client:only />
+    </header>
+    <section class="mt-[70px]"></section>
   </body>
 </html>
