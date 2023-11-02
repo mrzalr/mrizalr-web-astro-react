@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
+import PostCard from "../components/PostCard";
 ---
 
 <html lang="en">
@@ -24,8 +25,32 @@ import Hero from "../components/Hero";
     <header class="w-screen fixed top-0 left-0 right-0">
       <Navbar client:only />
     </header>
+    <!-- Hero component -->
     <section class="pt-[72px] pb-16 sm:pb-0 bg-white">
       <Hero client:only />
+    </section>
+    <!-- Blog posts component -->
+    <section class="flex justify-between items-end py-4">
+      <h1 class="font-bold sm:text-3xl bg-primary px-4 pl-16 py-1 text-white">
+        Stories
+      </h1>
+      <a
+        class="text-secondary font-semibold pr-4 sm:text-xl flex items-center gap-1"
+        href="/blogs"
+      >
+        Read more
+        <i class="ri-arrow-right-s-fill text-secondary"></i>
+      </a>
+    </section>
+    <section
+      class="h-[48rem] px-6 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-2"
+    >
+      <PostCard client:only />
+      <PostCard client:only />
+      <PostCard client:only />
+      <PostCard client:only />
+      <PostCard client:only />
+      <PostCard client:only />
     </section>
   </body>
 </html>
