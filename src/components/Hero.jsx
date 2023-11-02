@@ -47,22 +47,22 @@ const Hero = () => {
           >
             <li className={`${!isMobile && "text-[2vw]"}`}>
               <a href="https://www.instagram.com/m_rijalr">
-                <i class="ri-instagram-line text-pink-700"></i>
+                <i className="ri-instagram-line text-pink-700"></i>
               </a>
             </li>
             <li className={`${!isMobile && "text-[2vw]"}`}>
               <a href="https://www.x.com/mrizalr_">
-                <i class="ri-twitter-x-fill"></i>
+                <i className="ri-twitter-x-fill"></i>
               </a>
             </li>
             <li className={`${!isMobile && "text-[2vw]"}`}>
               <a href="https://www.linkedin.com/in/mrizalr">
-                <i class="ri-linkedin-fill text-primary"></i>
+                <i className="ri-linkedin-fill text-primary"></i>
               </a>
             </li>
             <li className={`${!isMobile && "text-[2vw]"}`}>
               <a href="https://www.github.com/mrzalr">
-                <i class="ri-github-fill"></i>
+                <i className="ri-github-fill"></i>
               </a>
             </li>
           </ul>
