@@ -35,7 +35,7 @@ const Hero = () => {
           >
             Backend Engineer at Runsystem
           </h3>
-          <p className={`pt-8 ${!isMobile && "text-[1.3vw]"}`}>
+          <p className={`pt-8 ${!isMobile && "text-[1.5vw]"}`}>
             "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
             quisquam laboriosam nostrum quo itaque sunt ratione, esse eveniet
             corrupti aliquam?""

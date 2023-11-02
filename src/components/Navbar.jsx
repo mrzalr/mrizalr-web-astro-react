@@ -7,6 +7,11 @@ const Navbar = () => {
 
   const isMobile = useMediaQuery({ query: "(max-width:640px)" });
 
+  const setMenu = () => {
+    document.body.style.overflow = menuVisible ? "unset" : "hidden";
+    setMenuVisible((visible) => !visible);
+  };
+
   return (
     <>
       <nav className="flex p-4 justify-between items-center relative bg-white">
@@ -40,7 +45,7 @@ const Navbar = () => {
           </button>
           {isMobile ? (
             <i
-              onClick={() => setMenuVisible((visible) => !visible)}
+              onClick={() => setMenu()}
               className={`ri-${
                 menuVisible ? "close" : "menu"
               }-line cursor-pointer z-50`}
