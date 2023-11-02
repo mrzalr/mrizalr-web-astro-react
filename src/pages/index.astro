@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
 ---
 
 <html lang="en">
@@ -23,6 +24,8 @@ import Navbar from "../components/Navbar";
     <header class="w-screen fixed top-0 left-0 right-0">
       <Navbar client:only />
     </header>
-    <section class="mt-[70px]"></section>
+    <section class="pt-[72px] pb-16 sm:pb-0 bg-white">
+      <Hero client:only />
+    </section>
   </body>
 </html>

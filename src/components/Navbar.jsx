@@ -19,7 +19,7 @@ const Navbar = () => {
           <h1 className="text-lg font-bold">mrizalr.</h1>
         </a>
         {!isMobile && (
-          <ul className="flex gap-8 lg:gap-12 w-50 justify-center duration-150">
+          <ul className="flex gap-4 md:gap-12 w-50 justify-center duration-150">
             <li className="text-primary font-bold text-sm text-center">
               <a href="/">/index</a>
             </li>
@@ -30,7 +30,7 @@ const Navbar = () => {
               <a href="/blogs">/blogs</a>
             </li>
             <li className="font-bold text-sm text-center">
-              <a href="/portofolio">/portofolio</a>
+              <a href="/portofolios">/portofolios</a>
             </li>
           </ul>
         )}
@@ -55,7 +55,7 @@ const Navbar = () => {
           className={`absolute ${
             isMobile ? "left-10 right-10" : "right-8 w-72"
           } -bottom-16 bg-white ${
-            toggleSearch ? "opacity-100" : "opacity-0"
+            toggleSearch ? "opacity-100 block" : "opacity-0 hidden"
           } rounded-full px-6 py-4 duration-150`}
         >
           <form className="flex gap-2 items-center">
@@ -74,12 +74,8 @@ const Navbar = () => {
             menuVisible ? "left-0 right-0" : "left-full -right-full"
           } top-0 bottom-0 font-semibold flex justify-center items-center duration-150 z-40`}
         >
-          {/* <i
-            onClick={() => setMenuVisible(false)}
-            className={`ri-close-line cursor-pointer absolute right-4 top-4`}
-          ></i> */}
           <ul className="flex flex-col gap-6 items-center">
-            <li>
+            <li className="text-primary">
               <a href="/">/index</a>
             </li>
             <li>
@@ -89,7 +85,7 @@ const Navbar = () => {
               <a href="/blogs">/blogs</a>
             </li>
             <li>
-              <a href="/portofolio">/portofolio</a>
+              <a href="/portofolios">/portofolios</a>
             </li>
           </ul>
           <button className="absolute bottom-5 left-50 -translate-x-50 bg-primary w-32 h-10 rounded-full text-defaultWhite font-semibold mt-12">
