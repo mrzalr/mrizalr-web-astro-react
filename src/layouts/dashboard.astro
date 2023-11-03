@@ -1,0 +1,31 @@
+---
+import "../styles/global.css";
+import Navbar from "../components/dashboard/Navbar";
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../public/mrizalr-logo-simple.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title ? title : "Dashboard"} | mrizalr</title>
+  </head>
+  <body>
+    <header class="w-screen fixed top-0 left-0 right-0">
+      <Navbar client:only />
+    </header>
+    <section class="pt-[72px] pb-16 sm:pb-0">
+      <slot />
+    </section>
+  </body>
+</html>
